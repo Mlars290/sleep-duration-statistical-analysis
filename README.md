@@ -3,18 +3,16 @@
 > Statistical analysis examining how **stress level** and **BMI category** influence sleep duration using a **Two-Way ANOVA** in **R**.
 
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![Statistics](https://img.shields.io/badge/Statistical%20Analysis-Two--Way%20ANOVA-blue?style=for-the-badge)
+![Statistics](https://img.shields.io/badge/Statistics-Two--Way%20ANOVA-blue?style=for-the-badge)
 ![ggplot2](https://img.shields.io/badge/Visualization-ggplot2-success?style=for-the-badge)
 
 ---
 
 ## 📖 Overview
 
-This project explores how **stress level** and **BMI category** affect sleep duration using statistical modeling techniques.
+This project investigates how **stress level** and **BMI category** influence sleep duration using a **Two-Way Analysis of Variance (ANOVA)**.
 
-Working as a team, we cleaned and prepared the data, engineered categorical variables, performed a **Two-Way ANOVA**, and interpreted both the main effects and interaction effects to better understand factors associated with sleep duration.
-
-This project was completed for **STAT 301 – Analysis of Variance and Multivariate Analysis** at **Metropolitan State University**.
+Completed as part of **STAT 301 – Analysis of Variance and Multivariate Analysis** at **Metropolitan State University**, our team cleaned and prepared the dataset, engineered categorical variables, performed statistical modeling, and interpreted both the main effects and interaction effects.
 
 ---
 
@@ -29,7 +27,7 @@ This project was completed for **STAT 301 – Analysis of Variance and Multivari
 - **Dataset:** Sleep Health and Lifestyle Dataset
 - **Observations:** 364
 - **Dependent Variable:** Sleep Duration (hours)
-- **Independent Variables:**
+- **Independent Variables**
   - Stress Level Category
   - BMI Category
 
@@ -37,11 +35,11 @@ This project was completed for **STAT 301 – Analysis of Variance and Multivari
 
 ## 🔬 Methodology
 
-The analysis included:
+This analysis included:
 
 - Data cleaning and preprocessing
 - Feature engineering
-- Categorization of stress levels
+- Stress level categorization
 - Two-Way ANOVA using a linear model (`lm`)
 - Type II ANOVA for unbalanced data
 - Welch Two-Sample t-tests
@@ -49,35 +47,35 @@ The analysis included:
 
 ---
 
-# 📈 Results
+# 📈 Visualizations
 
-## Interaction Plot
+## Interaction Between Stress Level and BMI Category
 
 <p align="center">
-  <img src="interaction-plot.png" width="700">
+  <img src="images/interaction-plot.png" width="800">
 </p>
 
-The interaction plot shows that sleep duration decreases as stress levels increase for both BMI groups. The non-parallel lines indicate a significant interaction effect, suggesting that the relationship between stress level and sleep duration differs depending on BMI category.
+The interaction plot illustrates that sleep duration decreases as stress increases for both BMI groups. The non-parallel lines indicate a statistically significant interaction, suggesting that the relationship between stress level and sleep duration differs across BMI categories.
 
 ---
 
-## Mean Sleep Duration by Stress Level and BMI
+## Mean Sleep Duration by Stress Level
 
 <p align="center">
-  <img src="bar-chart.jpeg" width="700">
+  <img src="images/bar-chart.jpeg" width="800">
 </p>
 
-Sleep duration decreases as stress levels increase for both BMI groups. Individuals with a Normal BMI generally slept longer at low and medium stress levels, while at high stress levels the relationship slightly reversed, supporting the significant interaction identified by the ANOVA.
+Mean sleep duration decreased as stress levels increased for both BMI groups. Individuals with a Normal BMI generally slept longer at low and medium stress levels, while the relationship slightly reversed at high stress levels, supporting the interaction identified by the ANOVA.
 
 ---
 
-# 💡 Key Findings
+# 📋 Key Findings
 
-- Stress level had a statistically significant effect on sleep duration (**p < 0.001**).
-- BMI category had a statistically significant effect on sleep duration (**p < 0.001**).
-- A significant interaction effect was observed between stress level and BMI category (**p < 0.001**).
+- Stress level significantly affected sleep duration (**p < 0.001**).
+- BMI category significantly affected sleep duration (**p < 0.001**).
+- A significant interaction effect was found between stress level and BMI category (**p < 0.001**).
 - Sleep duration consistently decreased as reported stress levels increased.
-- The interaction revealed that the effect of BMI on sleep duration changes under high stress conditions.
+- The relationship between BMI and sleep duration changed under high stress conditions.
 
 ---
 
@@ -91,23 +89,25 @@ Sleep duration decreases as stress levels increase for both BMI groups. Individu
 - Welch Two-Sample t-tests
 - Data Cleaning
 - Feature Engineering
-- Data Visualization
+- Data Visualization (ggplot2)
 - Statistical Interpretation
-- Research Reporting
+- Technical Report Writing
 
 ---
 
-# 📁 Repository Structure
+# 📂 Repository Structure
 
 ```text
 sleep-duration-statistical-analysis
 │
 ├── data/
 │
-├── Sleep_Analysis_TwoWay_ANOVA_Report.docx
+├── images/
+│   ├── interaction-plot.png
+│   └── bar-chart.jpeg
+│
 ├── sleep-anova-analysis.Rmd
-├── interaction-plot.png
-├── bar-chart.jpeg
+├── Sleep_Analysis_TwoWay_ANOVA_Report.docx
 └── README.md
 ```
 
@@ -121,7 +121,7 @@ sleep-duration-statistical-analysis
 
 ---
 
-## 📚 Course Information
+## 🎓 Course Information
 
 **Course:** STAT 301 – Analysis of Variance and Multivariate Analysis
 
